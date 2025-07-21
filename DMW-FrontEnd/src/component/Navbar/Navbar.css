@@ -1,0 +1,123 @@
+
+.div_container {
+  display: auto;
+  align-items: center;
+  font: 16px;
+  padding: 0px 16px;
+  background-color: #fff;
+  margin: 0px 100px;
+}
+
+
+.navbar_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  
+
+  
+}
+
+
+.logo {
+  flex: 1;
+}
+
+.logo_img {
+  width: 150px; 
+  height: 50px;
+}
+
+
+.items {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.email, .contact, .singin {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #f7931e; 
+}
+
+
+.Email {
+  font-weight: bold;
+  color: #000;
+}
+
+.Phone {
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.text_center {
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.text_sm {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.Supplier {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: -color 0.3s ease;
+  
+}
+
+.alert{
+  background-color: #f7931e;
+}
+
+
+.Supplier:hover {
+  background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .navbar_flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .items {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .Supplier {
+    align-self: center;
+    margin-top: 1rem;
+  }
+}
+.my-order-icon {
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-right: 0.5rem; /* Add space between icon and text */
+}

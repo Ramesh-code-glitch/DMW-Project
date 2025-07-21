@@ -1,0 +1,189 @@
+.div_container {
+    display: flex;
+    align-items: center;
+    font: 16px;
+    padding: 0px 16px;
+    background-color: #fff;
+    margin: 0px 100px;
+    box-shadow: none; /* Ensures no extra box/shadow around */
+  }
+  
+  .navbar_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo_img {
+    width: 150px;
+    height: 50px;
+  }
+  
+  .items {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .email,
+  .contact,
+  .account,
+  .cart {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0; /* Ensure no internal padding */
+    border: none; /* Remove any border */
+    background: none; /* Ensure no background color */
+    box-shadow: none; /* Remove shadow if any */
+    position: relative; /* Position for dropdown */
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    color: #f7931e;
+  }
+  
+  .Email,
+  .Phone {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .text_sm {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .account_title {
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .cart_icon {
+    font-size: 2rem;
+    color: #f7931e; /* Match your theme color */
+  }
+  
+  .cart_items_count {
+    position: absolute;
+    top: -5px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    background: #f7931e; /* Example background color */
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .dropdown_menu,
+  .dropdown_cart_menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Ensure white background */
+    box-shadow: none; /* Remove shadow */
+    list-style: none;
+    padding: 10px 0; /* Keep this to separate items */
+    margin: 0;
+    width: 150px;
+    z-index: 1;
+    border: none; /* Remove the border */
+  }
+  
+  /* Show dropdown menu on hover */
+  .account:hover .dropdown_menu,
+  .cart:hover .dropdown_cart_menu {
+    display: block; /* Show menu */
+  }
+  
+  .dropdown_menu li,
+  .dropdown_cart_menu li {
+    padding: 10px 20px; /* Keep padding for better spacing */
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .dropdown_menu li:hover,
+  .dropdown_cart_menu li:hover {
+    background-color: #f2f2f2; /* Highlight on hover */
+  }
+  
+  .dropdown_menu li a,
+  .dropdown_cart_menu li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* New Reset Rules */
+  .account,
+  .cart,
+  .account *,
+  .cart *,
+  .dropdown_menu,
+  .dropdown_cart_menu {
+    border: none !important; /* Force no borders */
+    outline: none; /* Remove any outlines */
+  }
+  
+  .div_container,
+  .navbar_flex,
+  .items {
+    padding: 0;
+    margin: 0; /* Adjust margin if necessary */
+    border: none; /* Ensure no border on parent containers */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar_flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .items {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+  
+    .logo_img {
+      margin-bottom: 1rem;
+    }
+  }
+  .dropdown_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown_menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown_menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .logout-option {
+    color: red;
+  }
+  
+  .logout-option:hover {
+    background-color: #f8d7da; /* Light red background for logout option */
+  }
+  

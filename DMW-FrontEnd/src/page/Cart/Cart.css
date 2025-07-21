@@ -1,0 +1,107 @@
+/* Cart.css */
+
+.cart-section {
+  max-width: 1200px;
+  margin: 20px auto 0; /* Added margin-top for spacing */
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners for the section */
+}
+
+.cart-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.cart-section .product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 15px; /* Space between items */
+  justify-content: center; /* Center the items */
+}
+
+.cart-section .product-card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  padding: 15px;
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition effects */
+  width: 180px; /* Set a fixed width for the product boxes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.cart-section .product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.cart-section .product-card img {
+  width: 100%; /* Make image take full width of the card */
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space below image */
+}
+
+.cart-section .product-info {
+  text-align: center; /* Center align text */
+}
+
+.cart-section .product-info h3 {
+  font-size: 1.3rem; /* Smaller heading size */
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.cart-section .product-info .price {
+  font-size: 1.2rem;
+  color: #27ae60; /* Green color for price */
+  font-weight: bold;
+}
+
+.cart-section .product-info .original-price {
+  font-size: 1rem;
+  color: #999; /* Gray color for original price */
+  margin-top: 5px;
+}
+
+.cart-section .product-info .discount {
+  font-size: 1rem;
+  color: #e74c3c; /* Red color for discount */
+  font-weight: bold;
+}
+
+.cart-section .remove-from-cart-btn {
+  background-color: #e74c3c; /* Red background for remove button */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 8px 12px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.cart-section .remove-from-cart-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+@media (max-width: 768px) {
+  .cart-section .product-grid {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
+
+  .cart-section .product-card {
+    width: 90%; /* Make product boxes wider on small screens */
+    margin: 0 auto; /* Center align */
+  }
+}

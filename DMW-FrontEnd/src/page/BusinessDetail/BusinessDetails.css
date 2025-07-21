@@ -1,0 +1,111 @@
+.LR-page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Add padding to the top and bottom */
+}
+
+.form-holder {
+    background: white; /* White background for the form */
+    padding: 20px; /* Padding inside the form holder */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width for responsiveness */
+    max-width: 600px; /* Max width for larger screens */
+    margin: 20px 0; /* Adds gap above and below the form holder */
+}
+
+.business-details-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 30px; /* Increased space between form elements */
+}
+
+.form-left,
+.form-right {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased space between form groups */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px; /* Adjust padding for better spacing */
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.2s; /* Smooth transition for border */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.alert {
+    margin-bottom: 15px; /* Space below alert messages */
+}
+
+.button-container {
+    grid-column: span 2; /* Button spans both columns */
+    display: flex;
+    justify-content: center; /* Center button */
+}
+
+/* Button styling */
+.btn, .form-holder .form-group input[type="submit"] {
+    background-color: #08121e; /* Background color */
+    color: white; /* White text color */
+    padding: 12px 8px; /* Increased top/bottom padding and reduced left/right padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Increased font size for the button text */
+    transition: background-color 0.3s; /* Smooth transition */
+    width: 40%; /* Set width to 40% to decrease the button size */
+    margin: 0 auto; /* Center the button */
+    display: block; /* Block display for centering */
+}
+
+.btn:hover, .form-holder .form-group input[type="submit"]:hover {
+    background-color: #6ca1da; /* Darker shade on hover */
+}
+
+.btn:disabled, .form-holder .form-group input[type="submit"]:disabled {
+    background-color: #6c757d; /* Gray color when disabled */
+    cursor: not-allowed; /* Not allowed cursor when disabled */
+}
+
+/* Logo styling */
+.logo {
+    max-width: 300px; /* Increased max width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Additional styles for the form */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    line-height: normal;
+}
+
+input:not([type="file"]), input:not([type="image"]), input:not([type="checkbox"]), input:not([type="radio"]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}

@@ -1,0 +1,78 @@
+.search-bar-container {
+  width: 320px; /* Fixed width */
+  max-width: 100%; /* Responsive */
+  padding: 20px;
+  color: #050202;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #000000;
+  border-radius: 5px; /* Increased border radius */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
+  margin: 0 auto; /* Center the container */
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between elements */
+}
+
+.dropdown-container h3 {
+  margin-bottom: 15px;
+  color: #050202;
+  font-size: 16px; /* Increased font size */
+  line-height: 1.4;
+}
+
+.dropdown {
+  width: 100%; /* Ensure dropdowns are full width */
+  padding: 10px;
+  color: #050202;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #000000;
+  font-size: 14px;
+}
+
+.search-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f90;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.search-button:hover {
+  background-color: #e68a00; /* Darken button on hover */
+}
+
+.user-search-footer { /* Make sure the class name matches */
+  margin-top: 20px;
+  color: #050202;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer .rating {
+  display: flex;
+  align-items: center;
+}
+
+.Glogo {
+  font-weight: bold;
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 768px) {
+  .search-bar-container {
+      width: 90%; /* Adjust width for smaller screens */
+      padding: 15px; /* Reduce padding for mobile */
+  }
+}

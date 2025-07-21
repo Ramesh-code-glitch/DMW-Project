@@ -1,0 +1,59 @@
+.rbanner-container {
+    background-color: rgb(1, 1, 1);
+    background-size: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: white;
+  }
+  
+  .banner-content {
+    max-width: 100%;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .banner-content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .banner-button {
+    background-color: #f99c11;
+    color: black;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .banner-button:hover {
+    background-color: #d88b0e;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .rbanner-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .text-container {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .search-container {
+      max-width: 100%;
+      
+    }
+  }
+  
+  
+/*# sourceMappingURL=Registation.css.map */

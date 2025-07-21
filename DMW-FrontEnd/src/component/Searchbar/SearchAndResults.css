@@ -1,0 +1,114 @@
+:root {
+  --blue: #007bff;
+  --red: #dc3545;
+  --green: #25D366; /* Added green variable for WhatsApp */
+  --font-family-sans-serif: 'Open Sans', sans-serif;
+  --gray-dark: #343a40;
+}
+
+body {
+  font-family: var(--font-family-sans-serif);
+  background-color: #f8f9fa;
+  color: var(--gray-dark);
+  margin: 0;
+  padding: 5px;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+}
+
+.enquiry-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.19);
+}
+
+.enquiry-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.selected-vehicle-title {
+  font-size: 1.5rem; /* Increase the font size */
+  text-decoration: underline; /* Underline the title */
+}
+
+.underline {
+  border-top: 2px solid var(--blue);
+  width: 50%;
+  margin: 10px auto; /* Center the underline */
+}
+
+.part-section {
+  padding-top: 20px;
+}
+
+#parts-list {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.btn-add-part {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.875rem;
+}
+
+.btn-add-part:hover {
+  background-color: #0056b3;
+}
+
+.vehicle-details,
+.model-section,
+.year-section {
+  text-align: center;
+}
+
+.vehicle-logo img {
+  max-width: 50%; /* Reduce the image size */
+  height: auto;
+}
+
+.part-preview ul {
+  list-style: none;
+  padding: 0;
+}
+
+.part-preview li {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 20px;
+  background-color: var(--green);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.whatsapp-link:hover {
+  background-color: #128C7E; /* Slightly darker shade on hover */
+}
+

@@ -1,0 +1,74 @@
+.signup-container {
+  max-width: 600px; /* Increased max width for a more spacious feel */
+  margin: auto; /* Center the form horizontally */
+  padding: 25px; /* Increased padding for more breathing room */
+  background-color: #f9f9f9; /* Background color for the container */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow effect */
+  display: flex; /* Flexbox for centering text */
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.signup-form {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 25px; /* Further increased space between grid items */
+}
+
+.form-control {
+  width: 100%; /* Full width of the grid item */
+  padding: 16px; /* Slightly increased padding for better spacing */
+  border-radius: 6px; /* Slightly more rounded corners */
+  border: 1px solid #ccc; /* Border color */
+  background-color: white; /* Set the input background color to white */
+  font-size: 15px; /* Slightly increased font size for better readability */
+  transition: border-color 0.2s ease-in-out; /* Smooth border color transition */
+}
+
+.form-group {
+  margin-bottom: 30px; /* Further increased space below form groups */
+  text-align: left; /* Left align the text in form groups */
+}
+
+.error-message {
+  font-size: 12px; /* Size for error messages */
+  color: red; /* Error message color */
+}
+
+.logo {
+  max-width: 160px; /* Slightly larger logo */
+  margin-bottom: 30px; /* Increased space below the logo */
+  display: block; /* Ensure logo is block element */
+  margin-left: auto; /* Center the logo */
+  margin-right: auto; /* Center the logo */
+}
+
+h2 {
+  margin-bottom: 30px; /* Increased space below the heading */
+  text-align: center; /* Center the heading */
+  font-size: 24px; /* Increase the font size for the heading */
+}
+
+/* Centering the text message and adding spacing */
+.text-message {
+  text-align: left; /* Align the text to the left */
+  margin: 20px 0 30px; /* Add margin to create a gap from top and bottom */
+  font-size: 18px; /* Increase the font size for better visibility */
+}
+
+/* Add gap below the button */
+.button-container {
+  margin-bottom: 20px; /* Increase space below the button */
+}
+
+/* Additional styles for the button */
+.btn {
+  width: 100%; /* Full width button */
+}
+.form-instruction {
+  font-size: 18px; /* Increase the font size */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  text-align: center; /* Center the text if desired */
+}

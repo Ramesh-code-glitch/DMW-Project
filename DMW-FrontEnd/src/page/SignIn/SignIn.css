@@ -1,0 +1,98 @@
+
+.LR-page {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;  
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+.alert {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 150px; /* Adjust this value for desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+.LR-page p {
+    font-size: 18px; /* Increase the font size */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    text-align: center; /* Center the text if desired */
+}
+

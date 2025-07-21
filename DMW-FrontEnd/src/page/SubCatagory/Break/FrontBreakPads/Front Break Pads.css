@@ -1,0 +1,81 @@
+.products-section {
+    padding: 20px;
+    background-color: rgba(231, 220, 220, 0.842);
+  }
+  .products-section h2 {
+    font-size: 40px;
+    color: #000000;
+    margin: 0 0 10px;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .products-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .products-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .products-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .products-info {
+    padding: 15px;
+  }
+  
+  .products-info h3 {
+    font-size: 16px;
+    color: #302e2e;
+    margin: 0 0 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .original-price {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  .discount {
+    font-size: 14px;
+    color: #00f;
+  }
+  
+  .brand, .code {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .badges {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .choice-badge {
+    background-color: #00f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
